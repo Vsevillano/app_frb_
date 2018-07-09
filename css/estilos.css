@@ -1,0 +1,257 @@
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../images/background_campo.jpg);
+}
+
+header {
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);  
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* --------------- Header / menu ------------- */
+
+.logo-box {
+    float: left;
+    margin-right: 20px;
+}
+
+.logo-box a {
+    outline: none;
+    display: block;
+}
+
+.logo-box img {
+    display: block;
+    max-width: 70px;
+    max-height: 70px;
+}
+
+nav {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+    height: 70px;
+    line-height: 70px;
+    transition: .5s linear;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: #ffffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+nav a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    background: #ff0101;
+    transition: width .5s linear;  
+}
+
+nav a:hover:after {
+    width: 100%;
+}
+
+
+main, aside {
+    text-align: justify;
+    margin: 20px 20px 10px 20px;
+    background-color: hsla(0, 0%, 100%, 0.3);    
+    padding: 20px;
+    border-radius: 5px;
+}
+
+main > h1, h2{
+    *font-family: 'Shrikhand', cursive;
+    *font-family: 'Knewave', cursive;
+     font-family: 'Galada', cursive;
+    *font-family: 'Luckiest Guy', cursive;
+    text-align: center;  
+}
+
+main > .form-login {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.form-login fieldset {
+    border-radius: 10px;
+    border: none;
+}
+
+.form-login input {
+    width: 100%;
+    margin: 5px 0px;   
+    border-radius: 10px;  
+
+}
+
+.form-login input[type=submit] {
+    width: 60%;
+    margin: 5px 0px;  
+    padding: 2px;
+    margin: 2px;    
+}
+
+
+footer {
+    background-color: hsla(0, 0%, 100%, 0.3);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.social img:hover {
+    transform: scale(1.2,1.2);
+}
+
+
+
+
+/* Maximo 660 px */
+
+@media screen and (max-width: 660px) {
+    header {
+        text-align: center;
+    }
+    
+    .logo-box {
+        float: none;
+        display: inline-block;
+        margin: 0 0 16px 0;
+    }
+    
+    ul {
+        float: none;
+    }
+    
+    nav li:first-of-type {
+        margin-left: 0;
+    }
+}
+
+/* Maximo 550 px */
+
+@media screen and (max-width: 550px) {
+    nav {
+        overflow: visible;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+    }
+    nav li:hover {
+        background: rgba(0,0,0,.1);
+    }
+    nav a:after {
+        content: none;
+    }
+}
+
+/* Minimo de 660px */
+
+@media screen and (min-width: 660px) {
+    .contenido {
+        display: flex;
+        flex-direction: row;
+        min-height: 70vh;
+    }
+    
+    main {
+        width: 80%;
+    }
+    
+    aside {
+        width: 20%;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 20%;
+    }
+
+}
+
+
+/* Minimo de 1024px */
+
+@media screen and (min-width: 1024px) {
+    main > h1,h2 {
+        font-size: 3rem;
+    }
+
+    main  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > form {
+        width: 60%;
+        
+    }
+
+    main > .form-login {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    
+    .form-login input {
+        width: 100%;
+        margin: 20px 0px;    
+    }
+
+}
