@@ -19,7 +19,7 @@ if(isset($_SESSION['login'])) {
 <?php
     }
 
-    if($_SESSION['login']['Perfil'] == 'Usuario') {
+    if($_SESSION['login']['Perfil'] == 'User') {
 
         ?>
             <nav>

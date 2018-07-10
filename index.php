@@ -1,5 +1,8 @@
 <?php
+    ob_start();
 
+    session_start();
+      
 ?>
 
 <!DOCTYPE html>
@@ -51,3 +54,6 @@
     </footer>
 </body>
 </html>
+<?php 
+	ob_end_flush();
+?>

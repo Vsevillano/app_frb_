@@ -84,3 +84,5 @@
         <!-- Jssor Slider End -->
         
     </div>
+
+    <?php  print_r($_SESSION['login']); ?>
