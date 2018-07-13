@@ -35,14 +35,14 @@
     <fieldset>
         <label for="Usuario">Usuario</label>
         <br>
-        <input type="text" name="usuario" id="usuario">
+        <input type="text" name="usuario" id="user-login">
         <br>
         <label for="Contraseña">Contraseña</label>
         <br>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="pass-login">
         <br>
-        <span style="color:red;"><p><?php echo $error;?></p></span>
-        <input type="submit" name="login" value="Iniciar sesion">
+        <span class="error-login" style="color:red;"><p><?php echo $error;?></p></span>
+        <input type="submit" class="submit" name="login" value="Login">
     </fieldset>
     
     <p><a href="index.php?page=recuperarPass">¿Olvidó su contraseña?</a></p>

@@ -18,6 +18,9 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jssor.slider.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/registro.js"></script>
+
     <title>FRB - Ultas del Azuaga</title>
 </head>
 <body>
